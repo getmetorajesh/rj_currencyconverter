@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AlteHaasGroteskRegular.ttf">
+            <string>AlteHaasGrotesk</string>
+            <string>AlteHaasGrotesk</string>
+            <string>AlteHaasGrotesk</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +22,72 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="AUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4n-Lw-72d">
+                                <rect key="frame" x="282" y="108" width="36" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AlteHaasGrotesk" family="Alte Haas Grotesk" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NiB-nJ-aZY">
+                                <rect key="frame" x="205" y="37" width="191" height="20"/>
+                                <animations/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r34-8R-lwl">
+                                <rect key="frame" x="252" y="151" width="97" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AlteHaasGrotesk" family="Alte Haas Grotesk" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hrM-Rh-0GR">
+                                <rect key="frame" x="0.0" y="211" width="600" height="137"/>
+                                <animations/>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="indicator_2" translatesAutoresizingMaskIntoConstraints="NO" id="iUM-VO-0Rs">
+                                <rect key="frame" x="290" y="338" width="20" height="14"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="indicator_1" translatesAutoresizingMaskIntoConstraints="NO" id="JsC-4i-hgz">
+                                <rect key="frame" x="290" y="205" width="20" height="14"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oam-LD-kn2">
+                                <rect key="frame" x="279" y="420" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AlteHaasGrotesk" family="Alte Haas Grotesk" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.78823529410000004" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NiB-nJ-aZY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ag-jM-Opv"/>
+                            <constraint firstItem="JsC-4i-hgz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ab-ng-gvH"/>
+                            <constraint firstItem="q4n-Lw-72d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oRb-kM-H3U"/>
+                            <constraint firstItem="iUM-VO-0Rs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pZO-jv-PEg"/>
+                            <constraint firstItem="r34-8R-lwl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rcv-ku-gnw"/>
+                            <constraint firstItem="NiB-nJ-aZY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="wBP-9a-weo"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblConvertedValue" destination="oam-LD-kn2" id="7iu-vT-Z79"/>
+                        <outlet property="scCustomPickerView" destination="hrM-Rh-0GR" id="GVT-ZQ-1M3"/>
+                        <outlet property="txtValueToConvert" destination="r34-8R-lwl" id="x4Y-V8-2gg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280" y="372"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="indicator_1" width="20" height="14"/>
+        <image name="indicator_2" width="20" height="14"/>
+        <image name="logo" width="191" height="20"/>
+    </resources>
 </document>
